@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: fgp-api-eureka-cluster
+  config:
+    activate:
+      on-profile: fgp-eureka1
+server:
+  port: 9901
+eureka:
+  instance:
+    hostname: fgp-eureka1
+  lease-renewal-interval-in-seconds: 8
+  lease-expiration-duration-in-seconds: 6
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://fgp-eureka2:9902/eureka/,http://fgp-eureka3:9903/eureka/
+  server:
+    renewal-threshold-update-interval-ms: 6000
+    expected-client-renewal-interval-seconds: 8
