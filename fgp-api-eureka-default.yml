@@ -17,7 +17,7 @@ eureka:
     expected-client-renewal-interval-seconds: 8
 spring:
   application:
-    name: fgp-eureka
+    name: fgp-api-eureka
   config:
     activate:
       on-profile: default
@@ -25,7 +25,7 @@ spring:
 ---
 spring:
   application:
-    name: fgp-api-eureka-cluster
+    name: fgp-api-eureka
   config:
     activate:
       on-profile: fgp-eureka1
@@ -48,7 +48,7 @@ eureka:
 ---
 spring:
   application:
-    name: fgp-api-eureka-cluster
+    name: fgp-api-eureka
   config:
     activate:
       on-profile: fgp-eureka2
@@ -71,7 +71,7 @@ eureka:
 ---
 spring:
   application:
-    name: fgp-api-eureka-cluster
+    name: fgp-api-eureka
   config:
     activate:
       on-profile: fgp-eureka3
