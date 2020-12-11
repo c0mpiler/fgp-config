@@ -1,6 +1,6 @@
 spring:
   application:
-    name: fgp-api-eureka-cluster
+    name: fgp-api-eureka
   config:
     activate:
       on-profile: fgp-eureka2
